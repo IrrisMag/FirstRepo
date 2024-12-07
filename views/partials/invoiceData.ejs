@@ -32,7 +32,7 @@ New Invoice
 <% invoices.forEach(function(invoice){ %>
 <tr>
 <td> <%= invoice.customer.name %> </td>
-<td> <%= invoice.amount %> </td>
+<td> <%= USDollar.format(invoice.amount) %> </td>
 <td> <%= new Date(invoice.date).toLocaleDateString('en-US') %> </td>
 <td>
 <% if(invoice.status === 'paid') { %>

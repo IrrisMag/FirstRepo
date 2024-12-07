@@ -30,4 +30,4 @@ router.post('/:id/edit', validateCustomer, updateCustomer);
 
 router.post('/:id/delete', deleteCustomer);
 
-module.exports = router;S
+module.exports = router;
